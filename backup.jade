@@ -1,0 +1,49 @@
+extend layout
+block content
+	#map
+	#change
+		p.zoomLevel zoom:
+		h4 
+			a.addProtestDiv(href='#') Add Protest 
+			| | 
+			a.addQueryDiv(href='#') Query Protests
+		#addProtestForm 
+			//h4 
+				//a.placeMarker(href='#') Place a Marker
+			h4 Add Protest Location
+				br
+				a.myLocation(href='#') Use my location 
+				| or  
+				a.addMarker(href='#') Place marker
+			h4 Type
+				br
+				a.boycott(href='#') Boycott 
+				| | 
+				a.strike(href='#') Strike 
+				| | 
+				a.protest(href='#') Protest 
+				| | 
+				a.other(href='#') Other 
+			h4 About the Protest: (optional)
+			p. 144 characters or less 
+			textarea(rows='4', cols='50' id='textInfo')
+			h4
+				a.submitCoords(href='#') Submit Protest
+		#queryProtest
+			h4 Query by Type:
+				br
+				a.boycottQ(href='#') Boycott 
+				| | 
+				a.strikeQ(href='#') Strike 
+				| | 
+				a.protestQ(href='#') Protest 
+				| | 
+				a.otherQ(href='#') Other 
+				| | 
+				a.allQ(href='#') All 
+			h4 Query by location
+				br
+				a.withinShape(href='#') Within Area
+				| | 
+				a.removeShape(href='#') Remove Shapes
+		block content

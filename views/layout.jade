@@ -1,0 +1,24 @@
+doctype html
+html
+	head
+		title= title
+		link(rel="stylesheet", href="bootstrap.min.css")
+		link(rel="stylesheet", href="libraries/jquery-ui/css/custom-theme/jquery-ui-1.10.4.custom.css")
+		link(rel='stylesheet',href='https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.css')
+		link(rel='stylesheet', href='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.2/leaflet.draw.css')
+		link(rel="stylesheet", href="stylesheets/style.css")
+		script(src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0")
+		script(src="http://code.jquery.com/jquery-1.11.0.min.js")
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/socket.io/0.9.16/socket.io.min.js")
+		script(src="libraries/jQuery.js")
+		script(src="libraries/bootstrap.min.js")
+		script(src="libraries/jquery-ui/js/jquery-ui-1.10.4.custom.js")
+		script(src="https://api.tiles.mapbox.com/mapbox.js/v1.6.2/mapbox.js")
+		script(src="http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-heat/v0.1.0/leaflet-heat.js")
+		script(src="libraries/leaflet-pip.js")
+		script(src="http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-draw/v0.2.2/leaflet.draw.js")
+		script(src="javascripts/maptoken.js")
+		script(src="javascripts/main.js")
+		meta(name="viewport", content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;")
+	body
+		block content

@@ -1,0 +1,103 @@
+extend layout
+block content
+	#markersADD.addMapMarkers.forMobile.button
+		img(src="/images/icon_marker.png" )
+		img(style='display: none;' src='/images/icon_markerRemove.png' )
+	#mainOpen.button
+		img.hideDesk.forMobile(src="/images/icon_protest.png")
+		.removeMobile
+			p. +
+	#useLocMobile.submitCoords.forMobile.button
+		p.useLoc.submitCoords 
+			| Submit
+			img(src="/images/icon_protestAdd.png")
+	#mobieFind.hideDesk
+		.btn-group
+			button.dropdown-toggle(type="button", data-toggle="dropdown")
+				| 
+				img(height='26px' width="26px" src="/images/icon_find.png")
+			ul.dropdown-menu(role="menu")
+				li 
+				a.last24(href='#') Last 24hrs 
+				li 
+				a.lastWeek(href="#") Last Week
+				li
+				a.allDays(href="#") All
+	#zoomLevel.removeMobile 
+		h5 zoom:
+	#change.romoveMobile.forDesk
+		#mainDesk
+			p  -
+		#mainClose.button.forMobile.forDesk
+			img(src="/images/icon_world.png")
+		h3.titleD.forDesk Example Map
+		h4.forDesk 
+			a.addProtestDiv.button(href='#') Add Protest  
+			|  
+			a.addQueryDiv.forDesk.button(href='#') Query Protests 
+			a.addMapMarkers.addMapMarkersD.desktop.button(href='#') 
+				img(src="/images/icon_marker.png" )
+				img(style='display: none;' src='/images/icon_markerRemove.png' )
+		#addProtestForm.forMobile
+			h4.removeMobile Add Protest Location
+				br
+				a.myLocation.removeMobile.button(href='#') Use my location   
+				br.desktop
+				span.desktop  or  
+				br.desktop
+				a.addMarker.removeMobile.button(href='#') Place marker
+				a.forMobile.button(href='#') Add Location
+			h4 Select Type
+				br
+				a.boycott.button(href='#') Boycott  
+				|  
+				a.strike.button(href='#') Strike  
+				|  
+				a.protest.button(href='#') Protest 
+				|  
+				a.other.button(href='#') Other 
+			h4 About the Protest: (optional)
+			p. 144 characters or less 
+			textarea(rows='4', cols='40' id='textInfo')
+			#removeOnloadMobile
+				h4 
+					a.button.submitCoords.removeMobile(href='#') Submit Protest
+					a.button.forMobile.mobileAdd(href='#') Set Location
+				.confirm 
+					p 
+		#queryProtest.forDesk
+			h5 Choose a way to query the protests
+			h4 Query by Type:
+				br
+				a.boycottQ.button(href='#') Boycott 
+				|  
+				a.strikeQ.button(href='#') Strike 
+				|  
+				a.protestQ.button(href='#') Protest 
+				|  
+				a.otherQ.button(href='#') Other 
+				|  
+				a.allQ.button(href='#') All 
+			h4 Choose a date:
+			p Start Date: 
+				input(type="text", id="datepicker")
+			p End Date: 
+				input(type="text", id="datepickerEnd")
+			#datepicker
+			h4
+				a.button.findDate(href="#") Submit Dates
+			h4 Query by location:
+				br
+				a.withinShape.button(href='#') Within Area 
+				|  
+				a.removeShape.button(href='#') Remove Area
+		#listInfo.forDesk
+			h4 Protest Information:
+			.List
+				ul
+	#map
+		block stuff
+
+
+
+	

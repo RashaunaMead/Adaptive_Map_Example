@@ -1,0 +1,324 @@
+body {
+ 	min-width: 500px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#change a {
+		margin-right: 5px;
+
+	border-style:solid;
+	border-width:1px;
+	border-color: #D1D1D1;
+}
+a:hover{
+	color: #5C5A5A;
+	text-decoration: none;
+}
+ul a:visited{
+	text-decoration: none;
+	background-color: white;
+	color: #428bca;
+}
+/*color used for list of protests*/
+.red{
+  color: #2074E8;
+}
+#map {
+	height: 100%;
+	margin: 0;
+	top: 0;
+	margin-left: 350px;
+	margin-right: 0px;
+	min-width: 100px;
+	width: -moz-calc(100% - 350px);
+    width: -webkit-calc(100% - 350px);
+    width: calc(100% - 350px);
+	position: fixed;
+}
+#change{
+	float: left;
+	top: 0;
+	width: 350px;
+	position: absolute;
+	min-width: 250px;
+	z-index: 1000;
+	background-color:rgba(255, 255, 255, 0.95);
+	border-bottom-right-radius:2em;
+  	padding: 5px;
+  	height: 100%;
+  	overflow: scroll;
+
+}
+h5, h4 {
+	line-height: 1.5em;
+}
+a.active  {
+	background-color: #D43B24;
+	color: white;
+	text-decoration: none;
+	border: none;
+}
+.List{
+	position: relative;
+  	overflow: scroll;
+  	height: 225px;
+}
+.placeMarker{
+	background-color: #F78893; 
+}
+textarea{
+	width: 300px;
+	resize: none;
+}
+#zoomLevel {
+	float: right;
+	position: relative;
+	margin-right: 4em;
+	z-index: 999;
+	background-color:rgba(255, 255, 255, 0.85);
+	border-bottom-right-radius:1em;
+	border-bottom-left-radius:1em;
+	padding: .25em;
+}
+
+
+#listInfo{
+	/*height: 200px;*/
+	/*position: fixed;
+	width: 60%;
+*/	overflow: scroll;
+	/*background-color:rgba(255, 255, 255, 0.75);
+	border-top-right-radius:2em;
+	left: 0px;*/
+}
+
+.List li {
+	list-style: none;
+	margin-left: -35px;
+	line-height: 1.25em;
+	padding-top: 1.25em;
+}
+
+#mainClose{
+	float: right;
+	border-style:solid;
+	border-width:0.5px;
+	border-color: #D1D1D1;
+	border-radius: .25em;
+	padding: 3px;
+
+	color: #D43B24;
+	border-radius: 4px;
+  	padding: 2px;
+	background-color:rgba(255, 255, 255, 1);
+ 	border-style:solid;
+	border-width:0.5px;
+	border-color: #D1D1D1;
+
+}
+
+.button{
+	color: #D43B24;
+	border-radius: 4px;
+  	padding: 2px;
+	background-color:rgba(255, 255, 255, 1);
+ 	border-style:solid;
+	border-width:0.5px;
+	border-color: #D1D1D1;
+}
+#mainClose:hover{
+	color:  #D43B24;
+	
+}
+#mainOpen {
+	float: left;
+	top: 0;
+	position: fixed;
+	z-index: 999;
+	background-color:rgba(255, 255, 255, 1);
+	border-right:solid 2px;
+	border-bottom: solid 2px;
+	border-top: solid 2px;
+  	border-color: #D43B24;
+	border-bottom-right-radius:2em;
+	border-top-right-radius:2em;
+  	padding: 10px;
+  	color: #D43B24;
+  	min-height: 40px;
+/*	min-width: 60px;
+	width: 130px;
+*/
+}
+#mainDesk p{
+	float: right;
+	border-style:solid;
+	border-width:1px;
+	border-color: #D1D1D1;
+	border-radius: .25em;
+	padding: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
+	background-color: rgba(255, 255, 255, .96);
+	color: #D43B24;
+
+}
+#markersADD{
+	float: right;
+	left: 0px;
+	top: 67px;
+	position: fixed;
+	z-index: 999;
+	background-color:rgba(255, 255, 255, 1);
+	border-right:solid 2px;
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+  	border-color: #D43B24;
+	border-bottom-right-radius:2em;
+	border-top-right-radius:2em;
+  	padding: 10px;
+  	color: #D43B24;
+  	min-height: 40px;
+/*  		min-width: 60px;
+*/	/*width: 130px;*/
+}
+#mainDesk p:hover{
+	color: #fff;
+	background-color:  #D43B24;
+}
+#useLocMobile {
+	float: left;
+	bottom: 10px;
+	left: 0px;
+	position: fixed;
+	z-index: 999;
+	min-height: 40px;
+	min-width: 40px;
+	border-right:solid 2px;
+	border-bottom: solid 2px;
+	border-top: solid 2px;
+  	border-color: #fff;
+	border-bottom-right-radius:2em;
+	border-top-right-radius:2em;
+  	padding: 10px;
+  	background-color: #A7D97C;
+	color: white;
+	text-decoration: none;
+}
+.redZoom {
+	color:  #D43B24;
+}
+
+
+
+@media only screen  and  (max-device-width : 820px) {
+	.button{
+		font-size: .88em;
+	}
+	body{
+		color: #fff;
+	}
+	#map {
+	height: 100%;
+	margin: 0;
+	top: 0;
+	width: 100%;
+	position: fixed;
+	}
+	#change{
+		width: 100%;
+		position: fixed;
+		z-index: 10000;
+		background-color:rgba(156, 156, 156, 0.96);
+		top: 0;
+		right: 0;
+		
+	}
+
+	#zoomLevel {
+	position: absolute;
+	top:66px;
+	right: 0px;
+	margin-right: 0px;
+	z-index: 999;
+	background-color:rgba(255,255, 255, 1);
+	border-top-left-radius:1em;
+	border-bottom-left-radius:1em;
+	border-bottom-right-radius:0em;
+	padding: .25em;
+
+	}
+	.leaflet-popup-content{
+		max-width: 120px;
+	}
+	#leaflet-control-zoom, #leaflet-bar leaflet-control{
+
+	}
+}
+
+.leaflet-control-zoom-out{
+	display: hidden;
+}
+.leaflet-popup-content{
+	padding-top: 20px; 
+}
+.leaflet-popup-close-button{
+	border: none;
+}
+.leaflet-popup-close-button a:hover{
+	color: #D43B24;
+}
+.ui-datepicker-prev, .ui-datepicker-next{
+	background: #CFCFCF;
+}
+.ui-datepicker-title {
+	color: #000;
+}
+
+.leaflet-draw-toolbar {
+	border: solid 3px;
+  	border-color: #D43B24;
+  	margin-right: -2px;
+}
+.mobile.time{
+	font-size: small;
+}
+#mobieFind{
+	float: right;
+	left: 0px;
+	top: 135px;
+	position: fixed;
+	z-index: 999;
+	background-color:rgba(255, 255, 255, 1);
+	border-right:solid 2px;
+	border-top: solid 2px;
+	border-bottom: solid 2px;
+  	border-color: #D43B24;
+	border-bottom-right-radius:2em;
+	border-top-right-radius:2em;
+  	padding: 10px;
+  	color: #D43B24;
+  	min-height: 40px;
+
+}
+#btn-group{
+	width: 40px;
+	height:40px;
+}
+.btn-group li{
+	width: 50px;
+
+}
+.dropdown-menu li {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-left: 15px;
+}
+button{
+	background-color: white;
+	border:none;
+	padding:-45px;
+}
+
+.addMapMarkersD   img{
+	height: 25px;
+}
