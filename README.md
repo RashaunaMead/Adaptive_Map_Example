@@ -1,5 +1,5 @@
 #Adaptive Map Example for FOSS4G Presentation 
-A live version can be found at <a href='immense-brook-4862.herokuapp.com'>immense-brook-4862.herokuapp.com</a>
+A live version can be found at <a href='http://immense-brook-4862.herokuapp.com/'>immense-brook-4862.herokuapp.com</a>
 ## What is adaptive?
 For this example there is only one check of if it is a desktop or a mobile user.
 
